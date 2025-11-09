@@ -184,7 +184,7 @@
   .page2 > div, .page3 > div > div {
     flex-direction: column;
     gap: 20px;
-    width: 95%;
+    width: 95%; /* 모바일에서 너비 확장 */
   }
 
   .slider-container {

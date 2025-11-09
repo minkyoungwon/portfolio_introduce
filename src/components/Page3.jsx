@@ -45,7 +45,27 @@ function Page3() {
           {/* 오른쪽 스킬 소개 */}
           <div style={{ flex: 1, textAlign: 'left' }}>
             <h1>기술 스택</h1>
-            <div style={{ marginBottom: '20px' }}>
+
+          <div style={{ marginBottom: '20px' }}>
+            <h2>Languages</h2>
+              <ul>
+                <li>JavaScript
+                  <ul>
+                    {/* <li>Node.js</li>
+                    <li>Express</li>
+                    <li>React / Vite</li> */}
+                  </ul>
+                </li>
+                <li>Python
+                  <ul>
+                    {/* <li>Pandas, Numpy, Matplotlib</li>
+                    <li>Seaborn, scikit-learn</li> */}
+                  </ul>
+                </li>
+                <li>TypeScript</li>
+              </ul>
+
+              <div style={{ marginBottom: '20px' }}>
               <h2>SQL</h2>
               <ul>
                 <li>PostgresSQL</li>
@@ -53,6 +73,7 @@ function Page3() {
                 <li>MongoDB</li>
               </ul>
             </div>
+
             <div style={{ marginBottom: '20px' }}>
               <h2>Cloud / Linux</h2>
               <ul>
@@ -61,23 +82,7 @@ function Page3() {
                 <li>VMware(CentOS)</li>
               </ul>
             </div>
-            <div style={{ marginBottom: '20px' }}>
-              <h2>Languages</h2>
-              <ul>
-                <li>JavaScript
-                  <ul>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>React / Vite</li>
-                  </ul>
-                </li>
-                <li>Python
-                  <ul>
-                    <li>Pandas, Numpy, Matplotlib</li>
-                    <li>Seaborn, scikit-learn</li>
-                  </ul>
-                </li>
-              </ul>
+            
             </div>
 
           </div>
