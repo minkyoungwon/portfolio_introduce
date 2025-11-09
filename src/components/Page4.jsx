@@ -43,8 +43,8 @@ const portfolioData = [
     title: "원하는 음성으로 대화를 해보자",
     desc: "Pandas, Numpy를 사용한 DecisionTree, RandomForest 데이터 분석 및 시각화",
     stack: ["Python", "Pandas", "Numpy"],
-    url2: "https://determined-primula-ac4.notion.site/1a4eae425a698019be7af5f61c86b5a9?pvs=4",
-    pdfUrl: "https://drive.google.com/drive/folders/1kInOiQ6cMiheWnL5d1VuHBqYZrg13Ik1?usp=drive_link&pli=1",
+    url2: "https://determined-primula-ac4.notion.site/AI_-WEB-25-05-26-06-16-209eae425a69802a9e91d0f0cffe6eb6?source=copy_link",
+    pdfUrl: "https://youtu.be/ANT1E5_s2Hk",
   },
   // {
   //   id: 4,
