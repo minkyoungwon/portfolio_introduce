@@ -2,11 +2,12 @@
 .page-bar {
   position: fixed;
   top: 50%;
-  right: 20px;
+  right: 20px; /* 왼쪽에서 오른쪽으로 변경 */
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 1000; /* 다른 요소와 겹치지 않도록 z-index 추가 */
 }
 
 .page-indicator {
@@ -15,6 +16,7 @@
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.3);
   transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer; /* 클릭 가능하도록 커서 변경 */
 }
 
 .page-indicator.active {

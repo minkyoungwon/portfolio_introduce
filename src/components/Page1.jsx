@@ -50,7 +50,10 @@ function Page1() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.5 }}
         >
-          휠을 통하여 이동하실 수 있습니다.
+          천천히 휠을 사용하여서 이동하실 수 있습니다.
+          <div>
+          혹은 우측의 버튼을 클릭하여서 페이지 이동하실 수 있습니다.
+          </div>
         </motion.p>
       </div>
     </motion.div>

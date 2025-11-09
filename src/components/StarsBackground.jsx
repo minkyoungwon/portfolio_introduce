@@ -11,10 +11,9 @@ function StarsBackground() {
 
   // 효과 옵션
   const particlesOptions = {
-    // 배경색을 투명 처리
     background: {
       color: {
-        value: "transparent", // 원래 #333333 이던 부분을 투명으로
+        value: "transparent",
       },
     },
     fpsLimit: 60,
@@ -26,33 +25,36 @@ function StarsBackground() {
       },
     },
     particles: {
-      // 별 개수
       number: {
-        value: 80, // 적당히 조절
+        value: 100, // 별 개수를 조금 늘림
         density: {
           enable: true,
           value_area: 800,
         },
       },
-      // 별 색 (원하는 색으로 변경 가능)
-      color: { value: "#ffffff" }, 
+      color: { value: "#ffffff" },
       shape: { type: "circle" },
-      opacity: { value: 0.7 },
+      opacity: {
+        value: { min: 0.1, max: 0.7 }, // 투명도 랜덤
+        animation: {
+          enable: true, // 반짝이는 효과
+          speed: 1,
+          minimumValue: 0.1,
+          sync: false,
+        },
+      },
       size: {
-        value: 3, 
-        random: true,
+        value: { min: 0.5, max: 2 }, // 크기 랜덤
       },
       move: {
         enable: true,
-        speed: 5,          // 좀 더 빠르게 떨어지도록
-        direction: "bottom", // 아래 방향
-        outModes: { default: "out" },
-      },
-      // trail 옵션으로 꼬리(잔상) 효과
-      trail: {
-        enable: true,
-        length: 10,
-        fillColor: "#000000", // 꼬리 영역을 덮을 색 (검정/투명 등)
+        speed: 0.5, // 속도를 매우 느리게
+        direction: "none", // 방향 없음 (무작위)
+        random: true,
+        straight: false,
+        outModes: {
+          default: "out", // 화면 밖으로 나가도록 유지
+        },
       },
     },
   };

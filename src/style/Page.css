@@ -15,7 +15,8 @@
   
 	/* 어두운 배경은 index.css에서 지정하므로, 여기서는 투명 or 일부 색 지정만 */
 	background: transparent;
-  }
+  padding: 0 20px; /* 좌우 패딩 추가 */
+}
   
   /* 큰 타이틀 */
   .title {
@@ -155,4 +156,59 @@
   .dark-button:active {
 	transform: scale(0.95);
   }
-  
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-image2 {
+    width: 150px; /* 모바일에서 이미지 크기 축소 */
+    height: 150px;
+  }
+
+  .page {
+    padding: 50px 10px; /* 상하 패딩 추가 */
+    overflow-y: auto; /* 모바일에서는 세로 스크롤 허용 */
+    min-height: 100vh; /* 최소 높이를 화면 높이로 설정 */
+    height: auto; /* 내용에 따라 높이 자동 조절 */
+  }
+
+  /* Page2, Page3의 flex 레이아웃을 세로로 변경 */
+  .page2 > div, .page3 > div > div {
+    flex-direction: column;
+    gap: 20px;
+    width: 95%;
+  }
+
+  .slider-container {
+    width: 95% !important;
+  }
+
+  .portfolio-card {
+    min-width: 250px;
+  }
+
+  /* 모바일용 폰트 크기 조정 */
+  h1, .title {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  p, li {
+    font-size: 0.9rem;
+  }
+  .scroll-info {
+    font-size: 0.8rem;
+  }
+}

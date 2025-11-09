@@ -21,12 +21,21 @@ function App() {
     }
   };
 
+  // Function to handle page change from buttons
+  const handlePageChange = (index) => {
+    setPageIndex(index);
+  };
+
   return (
     <div
       className={`app-container page-${pageIndex}`}
       onWheel={handleScroll}
     >
-      <PageBar currentPage={pageIndex} totalPages={totalPages} />
+      <PageBar
+        currentPage={pageIndex}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
 
       <AnimatePresence mode="wait">
         {pageIndex === 0 && <Page1 key="page1" />}
