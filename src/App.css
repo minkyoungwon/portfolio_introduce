@@ -9,6 +9,6 @@
     overflow: hidden;
     position: relative;
     color: #ffffff;
-    /* 배경색/이미지 등은 주로 Page.css나 index.css에서 처리 */
+    background-color: #000; /* 페이지 전환 시 배경색을 검정으로 유지 */
   }
   

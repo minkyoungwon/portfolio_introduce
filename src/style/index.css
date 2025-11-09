@@ -1,4 +1,12 @@
 /* index.css: 전역 스타일 (글꼴, 배경, 기본 색상 등) */
+
+/* 모든 요소의 box-sizing을 통일하여 레이아웃 예측을 쉽게 함 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: 'Fira Code', monospace, Arial, sans-serif; /* 개발자스러운 폰트 */
   line-height: 1.5;
@@ -10,15 +18,14 @@
   background-color: #000000; 
 }
 
-/* 만약 개발자스러운 배경 이미지를 사용하려면:
-body {
-  background: url('/assets/dev_background.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
-*/
-
+html,
 body {
   margin: 0;
+  padding: 0;
+  background-color: #000; /* 전환 시 배경 및 테두리 문제 해결 */
+}
+
+body {
   min-width: 320px;
   min-height: 100vh;
 }
